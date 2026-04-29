@@ -1,15 +1,5 @@
 from django.db import models
 
-class Genre(models.Model):
-    name = models.CharField(max_length=100)
-
-    class Meta:
-        ordering = ['name']
-
-    def __str__(self):
-        return self.name
-
-
 class Director(models.Model):
     first_name = models.CharField(max_length=100)
     last_name = models.CharField(max_length=100)
@@ -30,14 +20,13 @@ class Actor(models.Model):
 
     def __str__(self):
         return f"{self.first_name} {self.last_name}"
-from django.db import models
 
-# NUEVO
+
 class Genre(models.Model):
     name = models.CharField(max_length=100, unique=True)
 
     class Meta:
-        ordering = ['id']  # IMPORTANTE
+        ordering = ['id']
 
     def __str__(self):
         return self.name
@@ -63,7 +52,7 @@ class Movie(models.Model):
     )
 
     genres = models.ManyToManyField(
-        'Genre',  # CAMBIO (relación con Genre)
+        'Genre',
         related_name='movies',
         blank=True
     )

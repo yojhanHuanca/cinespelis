@@ -13,3 +13,6 @@
 
 ### Endpoint genre movies
 ![Endpoint genre movies](docs/empoin.genre.movies.png)
+
+### New App
+![Endpoint genre movies](docs/new.app.png)
