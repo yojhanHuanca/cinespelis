@@ -14,5 +14,5 @@
 ### Endpoint genre movies
 ![Endpoint genre movies](docs/empoin.genre.movies.png)
 
-### New App
-![Endpoint genre movies](docs/new.app.png)
+### Nueva App de Reseñas
+![Nueva App de Reseñas](docs/new.app.png)
